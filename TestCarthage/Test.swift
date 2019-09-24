@@ -7,9 +7,14 @@
 //
 
 import Foundation
+import Hydra
 
-public class Test {
-  public func printTest() {
+public class Test: NSObject {
+  public static func printTest() {
     print("test test ....")
+  }
+
+  public static func printHydra() {
+    print(HydraVersionNumber)
   }
 }
